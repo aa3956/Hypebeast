@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>HYPEBEAST-Release your inner hype</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" language="javascript" src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" language="javascript" src="js/jquery.scrollify.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="content.js"></script>
+    </head>
+    
+    <body>
+
+<!----------------------HomePage Content Begins Here--------------------------------------------------------------------------------------->
+    <div id="home" class="example-classname">
+
+        <div id="mySidenav">
+          <a href="#" id="hypebeastLink" onclick="$.scrollify.move(0);">Home</a>
+          <a href="#" id="fashionLink" onclick="$.scrollify.move(1);">Fashion</a>
+          <a href="#" id="footwearLink" onclick="$.scrollify.move(2);">Footwear</a>
+          <a href="#" id="musicLink" onclick="$.scrollify.move(3);">Music</a>
+          <a href="#" id="videosLink" onclick="$.scrollify.move(4);">Videos</a>
+          <a href="#" id="privacyLink" onclick="$.scrollify.move(5);">Privacy </a>
+          <a href="#" id="contactLink" onclick="$.scrollify.move(6);">Contact </a>
+        </div>
+        
+        <!-- HYPEBEAST logo-->
+        <img src="https://images.cooltext.com/5071430.png" width="642" height="116" id="logo" />
+        
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Register button on home page -->
+        <button id="registerButton" type="button" data-toggle="modal" data-target="#register"> REGISTER</button>
+        
+        <!-- Modal for register in the Menu sideNav -->
+        <div id="register" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div id="bk" class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align:center; color: white; font-size: 30px;">Register</h4>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control input-sm" placeholder="Name" required><br>
+                <input type="text" class="form-control input-sm" placeholder="Gender" required><br>  
+                <input type="email" class="form-control input-sm" placeholder="Email" required><br>
+                <input type="email" class="form-control input-sm" placeholder="Confirm Email" required><br>
+                <input type="password" class="form-control input-sm" placeholder="Password" required><br>
+                <input type="password" class="form-control input-sm" placeholder="Confirm Password" required><br>
+                <input type="text" class="form-control input-sm" placeholder="Date of birth" required><br>
+                <!-- The paragraph below has a link to the privacy policy page for the user to accept and see -->
+                <p>By creating an account you agree to our <a href="#">Terms & Conditions</a></p>
+              </div>
+
+              <!-- Modal footer content -->    
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+        
+         <!-- Login button on home page -->
+        <button id="loginButton" type="button" data-toggle="modal" data-target="#logon">LOGIN</button>
+    
+        
+        <!-- Modal for login -->
+        <div id="logon" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div id="bk" class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align:center; color: white; font-size: 30px;">Login</h4>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control input-sm" placeholder="Enter Email" required><br>
+                <input type="text" class="form-control input-sm" placeholder="Enter Password" required><br>
+                <!-- Modal for forgot password accessed from here -->
+                <p id="forgot1"><a data-toggle="modal" data-target="#forgotPass">Forgot Password?</a></p>
+              </div>
+                
+              <!-- Modal footer content -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal for forgot password-->
+        <div id="forgotPass" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div id="bk" class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="text-align:center; color: white; font-size: 30px;">Forgot Password?</h4>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control input-sm" placeholder="Email" required><br>
+                <input type="text" class="form-control input-sm" placeholder="Old Password" required><br>
+                <input type="text" class="form-control input-sm" placeholder="New Password" required><br>
+              </div>
+            
+              <!-- Modal footer content -->    
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Send Email</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slogan -->
+        <h2 id="slogan">RELEASE YOUR INNER HYPE</h2>
+    </div>
+
+<!----------------------HomePage Content Ends Here----------------------------------------------------------------------------------------->
+
+<!----------------------FashionPage Content Begins Here------------------------------------------------------------------------------------>
+       
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Fashion</h1>
+        <br>
+        
+        <div class="container" id="slideshowContainer">
+            <div class="row">
+                <div class="col-md-11">
+                    <div id="Carousel" class="carousel slide">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousel" data-slide-to="1"></li>
+                            <li data-target="#Carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner" >
+                            <div class="item active">
+                                <div class="row">
+                                  <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/travis.png" style="max-width:100%;"></a></div>
+                                  <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/drake.png" style="max-width:100%;"></a></div>
+                                  <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/tory.png" style="max-width:100%;"></a></div>
+                                  <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/quavo.png" style="max-width:100%;"></a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/2chainz.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/migos.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/bigsean.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/future.png" style="max-width:100%;"></a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/asapr.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/rocky.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/french.png" style="max-width:100%;"></a></div>
+                                    <div class="col-md-3"><a href="#" class="img-rounded"><img src="Images/takeoff.png" style="max-width:100%;"></a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                        </div><!--.carousel-inner-->
+                        <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                        <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                    </div><!--.Carousel-->
+                </div>
+            </div>
+        </div><!--.container-->
+        <h3 style="text-align: center;">Trending</h3>
+        <img href="" id="palaceImg" src="Images/palace.png" width="200" height="150">
+        <img id="lvImg" src="Images/lv.png" width="125" height="125">
+        <img id="chanelImg" src="Images/chanel.png" width="150" height="150">
+        <img id="gucciImg" src="Images/gucci.png" width="220" height="150">
+        <img id="thrashImg" src="Images/thrash.png" width="200" height="200">
+        <img id="supremeImg" src="Images/supreme.png" width="200" height="150">
+    </div>
+        
+<!----------------------FashionPage Content Ends Here-------------------------------------------------------------------------------------->
+
+<!----------------------FootwearPage Content Begins Here----------------------------------------------------------------------------------->
+
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Footwear</h1>
+        <br>
+        <div class="container" id="imageContainer">
+            <h3 style="text-align: left;">Latest</h3>
+            <div class="row">
+                <div class="col-md-3" id="image1">
+                    <div class="product-item">
+                      <div class="pi-img-wrapper">
+                        <img src="Images/jordan1t.png" class="img-responsive">
+                        <div>
+                          <a href="#" class="btn">Like</a>
+                          <a href="#" class="btn">Comment</a>
+                        </div>
+                      </div>
+                      <h3><a href="shop-item.html">Nike Air Jordan 1 x Off White</a></h3>
+                      <div class="pi-price">$2000.00</div>
+                      <a href="javascript:;" class="btn add2cart">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-3" id="image2">
+                    <div class="product-item">
+                      <div class="pi-img-wrapper">
+                        <img src="Images/jordan4t.png" class="img-responsive">
+                        <div>
+                          <a href="#" class="btn">Like</a>
+                          <a href="#" class="btn">Comment</a>
+                        </div>
+                      </div>
+                      <h3><a href="shop-item.html">Air Jordan x Levi</a></h3>
+                      <div class="pi-price">$1000.00</div>
+                      <a href="javascript:;" class="btn add2cart">Read More</a>
+                    </div>
+                </div>
+                <h3 id="popular">Popular</h3>
+                <div class="col-md-3" id="image3">
+                    <div class="product-item">
+                      <div class="pi-img-wrapper">
+                        <img src="Images/yeezyt.png" class="img-responsive">
+                        <div>
+                          <a href="#" class="btn">Like</a>
+                          <a href="#" class="btn">Comment</a>
+                        </div>
+                      </div>
+                      <h3><a href="shop-item.html">Adidas x Kanye</a></h3>
+                      <div class="pi-price">$500.00</div>
+                      <a href="javascript:;" class="btn add2cart">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-3" id="image4">
+                    <div class="product-item">
+                      <div class="pi-img-wrapper">
+                        <img src="Images/humanRacet.png" class="img-responsive">
+                        <div>
+                          <a href="#" class="btn">Like</a>
+                          <a href="#" class="btn">Comment</a>
+                        </div>
+                      </div>
+                      <h3><a href="shop-item.html">NMD x Pharrel</a></h3>
+                      <div class="pi-price">$1200.00</div>
+                      <a href="javascript:;" class="btn add2cart">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <h3 id="wrw">What rappers wore?</h3>
+            <div class="col-md-3">
+                <a href="https://www.flightclub.com/air-jordan-4-retro-ls-tour-yellow-dark-blue-grey-white-010448" class="img-rounded">
+                    <img src="Images/travis.png" style="max-width:100%; height: 275px;">
+                </a>
+            </div>
+            <div class="col-md-3" style="margin-top: -275px; margin-left: 200px;">
+                <a href="https://www.flightclub.com/the-10-air-jordan-1-white-black-varsity-red-801781" class="img-rounded">
+                    <img src="Images/rocky2.png" style="max-width:100%; height: 275px;">
+                </a>
+            </div>
+            <div class="col-md-3" style="margin-top: 10px;">
+                <a href="https://www.flightclub.com/air-jordan-1-retro-high-og-black-starfish-sail-012258" class="img-rounded">
+                    <img src="Images/offset.png" style="max-width:100%; height: 275px; width: 183px;">
+                </a>
+            </div>
+            <div class="col-md-3" style="margin-top: -280px; margin-left: 200px;">
+                <a href="https://www.flightclub.com/air-jordan-1-retro-high-og-white-black-varsity-red-012234" class="img-rounded">
+                    <img src="Images/chance.png" style="max-width:100%; height: 280px; width: 183px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!----------------------FootwearPage Content Ends Here------------------------------------------------------------------------------------->
+
+<!----------------------MusicPage Content Begins Here-------------------------------------------------------------------------------------->
+
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Music</h1>
+        <br>
+
+        <div class="wrapper" id="musictabs">
+            <h3 id="hypeAlbums">Hype Albums</h3>
+            <div class="bubble cabot third">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/memories.png">
+                        <img src="Images/tory2.png">
+                    </div>
+                    <div class="house cabot">Tory Lanez</div>
+                    <span class="points">Memories Dont Die</span> 
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/memories-dont-die/1347355184">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble dunster first">
+                <div class="details">
+                  105 259<br>
+                    streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/p2.png">
+                        <img src="Images/dave2.png">
+                    </div>
+                    <div class="house dunster">Dave East</div>
+                    <span class="points">Paranoia 2</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/gb/album/p2/1334960458">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble eliot third">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/c2.png">
+                        <img src="Images/migos2.png">
+                    </div>
+                    <div class="house eliot">Migos</div>
+                    <span class="points">Culture II</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/culture-ii/1340307563">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble lowell fourth">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/more.png">
+                        <img src="Images/drake2.png">
+                    </div>
+                    <div class="house lowell">Drake</div>
+                    <span class="points">More Life</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/gb/album/more-life/1216996902">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble mather second">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/stoney.png">
+                        <img src="Images/post.png">
+                    </div>
+                    <div class="house mather">Post Malone</div>
+                    <span class="points">Stoney</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/gb/album/stoney/1170135540">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble quincy fourth">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/damn.png">
+                        <img src="Images/kendrick.png">
+                    </div>
+                    <div class="house quincy">Kendrick L</div>
+                    <span class="points">Damn</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/damn/1223592280">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop fourth">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/master.png">
+                        <img src="Images/rick.png">
+                    </div>
+                    <div class="house winthrop">Rick Ross</div>
+                    <span class="points">Mastermind</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/mastermind-deluxe-version/816474784">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop second" style="margin-top: -240px;margin-left: 720px;">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/wins.png">
+                        <img src="Images/meek.png">
+                    </div>
+                    <div class="house winthrop">Meek Mill</div>
+                    <span class="points">Wins and Losses</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/wins-losses/1258267771rap-albums">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop fourth" style="margin-top: -260px;margin-left: 821px;">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/starboy.png">
+                        <img src="Images/weeknd.png">
+                    </div>
+                    <div class="house winthrop">The Weeknd</div>
+                    <span class="points">Starboy</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/starboy/1156172520">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop third" style="margin-top: -280px;margin-left: 922px;">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/campain.png">
+                        <img src="Images/dolla.png">
+                    </div>
+                    <div class="house eliot">Ty Dolla Sign</div>
+                    <span class="points">Campaign</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/campaign/1145939514">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+        </div>
+        
+        <h3 style="text-align: center; margin-top: -20px;">Billboard Top Songs</h3>
+        <div class="row" style="margin-top: 255px; margin-left: -400px;">
+            <div class="bubble winthrop second" style="margin-top: -240px;margin-left: 720px;">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/more.png">
+                        <img src="Images/drake3.png">
+                    </div>
+                    <div class="house winthrop">Drake</div>
+                    <span class="points">Passionfruit</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/gb/album/more-life/1216996902">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop fourth" style="margin-top: -260px;margin-left: 821px;">
+                <div class="details">
+                  105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/starboy.png">
+                        <img src="Images/weeknd.png">
+                    </div>
+                    <div class="house winthrop">The Weeknd</div>
+                    <span class="points">Starboy</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/starboy/1156172520">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+            <div class="bubble winthrop third" style="margin-top: -280px;margin-left: 922px;">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/campain.png">
+                        <img src="Images/dolla.png">
+                    </div>
+                    <div class="house eliot">Ty Dolla Sign</div>
+                    <span class="points">Hello</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/campaign/1145939514">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div> 
+            <div class="bubble winthrop fourth" style="margin-top: -300px;margin-left: 1023px;">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/stoney.png">
+                        <img src="Images/post.png">
+                    </div>
+                    <div class="house eliot">Post Malone</div>
+                    <span class="points">Rockstar</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/gb/album/stoney/1170135540">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div> 
+            <div class="bubble winthrop third" style="margin-top: -320px;margin-left: 1124px;">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/memories.png">
+                        <img src="Images/tory2.png">
+                    </div>
+                    <div class="house eliot">Tory Lanez</div>
+                    <span class="points">48 Floors</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/memories-dont-die/1347355184">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div> 
+            <div class="bubble winthrop second" style="margin-top: -340px;margin-left: 1225px;">
+                <div class="details">
+                105 259<br>
+                  streams
+                </div>
+                    <div class="filter-me">
+                        <img src="Images/wins.png">
+                        <img src="Images/meek.png">
+                    </div>
+                    <div class="house eliot">Meek Mill</div>
+                    <span class="points">Heavy Heart</span>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://itunes.apple.com/us/album/wins-losses/1258267771rap-albums">Listen Here</a>
+                <div class="arrow_bottom"></div>
+            </div>
+        </div>
+    
+    </div>
+        
+<!----------------------LifestylePage Content Ends Here------------------------------------------------------------------------------------>
+        
+<!----------------------VideosPage Content Begins Here------------------------------------------------------------------------------------->
+
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Videos</h1>
+        <br>
+        
+        <div class="well" id="video1">
+            <h3 style="margin-top: -20px; margin-left: -20px;">Drake-Gods Plan</h3>
+            <video width="400" controls id="godsPlan">
+              <source src="videos/godsplan.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="well" id="video2">
+            <h3 style="margin-top: -20px; margin-left: -20px;">Tory Lanez-Say it</h3>
+            <video width="400" controls id="godsPlan">
+              <source src="videos/sayit.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="well" id="video3">
+            <h3 style="margin-top: -20px; margin-left: -20px;">Migos-Bad and Boujee</h3>
+            <video width="400" controls id="godsPlan">
+              <source src="videos/bad.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container" id="tabContainer">   
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <!-- Nav tabs category -->
+                    <ul class="nav nav-tabs faq-cat-tabs">
+                        <li class="active"><a href="#faq-cat-1" data-toggle="tab">Latest</a></li>
+                        <li><a href="#faq-cat-2" data-toggle="tab">Popular</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content faq-cat-content">
+                        <div class="tab-pane active in fade" id="faq-cat-1">
+                            <div class="panel-group" id="accordion-cat-1">
+                                <a class="img-rounded"><img src="Images/drake3.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Drake-Gods Plan <br>
+                                    <h5 style="margin-left: 110px;">Drakes Gods Plan is inspired by giving back to the community that made Drake who he is today. Gods Plan has been in the Billboard Top 100 for the sixth week running.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Jake Albert / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/post.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Post Malone-Rockstar <br>
+                                    <h5 style="margin-left: 110px;">Post Malone featuring 21 Savage two of the most successful upcoming music artists who have thrilled the world with their amazing sounds.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Joshua Jones / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/tory2.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Tory Lanez-Real Thing <br>
+                                    <h5 style="margin-left: 110px;">Tory Lanez who is a upcoming Canadian rapper who has thrilled his fanbase and the world with his innovative sounds that he uses</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Phil McArthur / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/p2.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Dave East-Powder <br>
+                                    <h5 style="margin-left: 110px;">Dave East Paranoia 2 album has been his most successfull album to date with one of the outstanding songs 'Powder' telling us about his life growing up.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Harry Hills / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="faq-cat-2">
+                            <div class="panel-group" id="accordion-cat-2">
+                                <a class="img-rounded"><img src="Images/meek.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Meek Mill-Fall Thru <br>
+                                    <h5 style="margin-left: 110px;">Meek Mill Fall Thru reveals one of the songs from his album 'Wins adn Losses' which have been dedicated to his come up through the years.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Jack Deary / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/nav.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Nav-Myself <br>
+                                    <h5 style="margin-left: 110px;">Nav Myself gave us an insight into how he went from being a producer of music to becoming one of the hottest rappers of 2017.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Lewis Hamilton / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/weeknd.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">The Weeknd-Starboy <br>
+                                    <h5 style="margin-left: 110px;">The Weeknd Starboy is one the most popular songs from his album which has been streamed more 10 million times on Apple music.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Marry Poppins / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                                <a class="img-rounded"><img src="Images/drake3.png" width="100" height="100"></a>
+                                <h4 style="margin-left: 110px; margin-top: -100px;">Drake Gods Plan <br>
+                                    <h5 style="margin-left: 110px;">Drakes Gods plan is inspired by giving back to the community that made Drake who he is today. Gods Plan has been in the Billboard Top 100 for the sixth week running.</h5><br>
+                                    <h6 style="margin-left: 110px; margin-top: -20px;"><a>By Zack Ryan / 1 March 2018</a></h6> 
+                                </h4>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+<!----------------------VideosPage Content Ends Here--------------------------------------------------------------------------------------->
+
+<!----------------------PrivacyPage Content Begins Here------------------------------------------------------------------------------------>
+
+        
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Privacy Policy</h1>
+        <br>
+        
+        <h3 style="text-align: center; margin-top: -5px;">What data Hypebeast collects from you?</h3>
+        <div class="well"> 
+            <p>This Privacy Policy is meant to help you understand what data we collect, why we collect it and what we do with it. We collect information to provide better services to all of our users
+                
+            We collect information in the following ways:
+                
+            <li>
+            Information you give us. For example, many of our services require you to sign up for a Hypbeast Account. When you do, we’ll ask for personal information, like your name, email address, telephone number to store with your account. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible Google Profile, which may include your name and photo.
+            </li>
+            <br>
+                
+            <li>
+            We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones and to protect Google and our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads. 
+            </li>
+            <br>
+                
+            <li>
+            Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including Google. Our services provide you with different options on sharing and removing your content. 
+            </li>
+            <br>
+                
+            We will share personal information with companies, organisations or individuals outside Google if we have a belief in good faith that access, use, preservation or disclosure of the information is reasonably necessary to: 
+                
+            <li>
+            meet any applicable law, regulation, legal process or enforceable governmental request
+            </li>
+                
+            <li>
+            enforce applicable Terms of Service, including investigation of potential violations. 
+            </li>
+                
+            <li>
+            detect, prevent or otherwise address fraud, security or technical issues. 
+            </li>
+                
+            </p>
+            <h3 style="text-align: center;">We hope you have understood our policy</h3>
+        </div>
+    </div>   
+        
+<!---------------------PrivacyPage Content Ends Here--------------------------------------------------------------------------------------->
+        
+<!----------------------ContactPage Content Begins Here------------------------------------------------------------------------------------>
+        
+    <div class="example-classname" style="background-color: black;">
+        <br>
+        <h1 style="color: white; font-size: 40px; text-align: center;">Contact Us</h1>
+        <br>
+        
+        <div class="container">
+          <h4 class="text-center" style="font-size: 19px; margin-top: -7px;">We love our fans!</h4>
+
+          <div class="row">
+            <div class="col-md-4" style="left: 7%; font-size: 16px;">
+              <p>Fan? Drop a note.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span>London, UK</p>
+              <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 73834883833</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> Email: hypebeast@hotmail.com</p>
+            </div>
+            <div class="col-md-8" style="left: -10%; font-size: 40px;">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="10"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right" type="submit" id="sendButton">Send</button>
+                </div>
+              </div>
+            </div>
+            <h4 style="color:white; text-align: center; font-size: 35px;">Follow our Social Media to keep updated!</h4>
+            <div id="socials">
+                <a href="#" class="fa fa-facebook" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-twitter" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-youtube" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-instagram" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-snapchat-ghost" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-tumblr" style="font-size: 25px;"></a>
+                <a href="#" class="fa fa-yahoo" style="font-size: 25px;"></a>
+                <p style="color:white; font-size: 19px; margin-left: 200px; margin-top: 10px;">Copyright © 2018 HYPEBEAST </p>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+        
+<!----------------------ContactPage Content Ends Here-------------------------------------------------------------------------------------->
+
+</body>
+</html> 

@@ -1,0 +1,695 @@
+/*----------------------------Body--------------------------------------------------------------------------------------------------------*/ 
+body {
+    background: url(images/bckImg2.gif) no-repeat center center fixed;
+    font-family: "Bebas neue";
+    color: white;
+}
+
+/*------------------------------End of css for Body---------------------------------------------------------------------------------------*/
+
+/*------------------------------NavBar----------------------------------------------------------------------------------------------------*/
+
+#mySidenav a {
+    position: fixed;
+    font-family: "Bebas neue";
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 125px;
+    text-decoration:inherit;
+    font-size: 25px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#mySidenav a:hover {
+    background-color: white;
+    color: black;
+    left: 0;
+    
+}
+
+/*------------------------------End of css for NavBar-------------------------------------------------------------------------------------*/
+
+/*------------------------------Homepage--------------------------------------------------------------------------------------------------*/
+
+#hypebeastLink {
+    top: 150px;
+    background-color: #2b2c2d;
+}
+
+/* Logo id */
+#logo{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+#registerButton{
+    font-family: "Bebas neue";
+    width: 130px;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 22px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#registerButton:hover{
+    background-color: white;
+    color: black;
+}
+
+#register{
+    font-family: "Bebas neue";
+    font-size: 22px;
+    color: white;
+    border: none;   
+}
+
+#loginButton{
+    font-family: "Bebas neue";
+    width: 130px;
+    background-color: black;
+    border:none;
+    color:white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#loginButton:hover{
+    background-color: white;
+    color: black;
+}
+
+#logon{
+    top: 22%;
+    font-family: "Bebas neue";
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+#forgotPass{
+    top: 22%;
+    font-family: "Bebas neue";
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+#bk{
+    background-color: #2e302f;
+    border-bottom-style: solid;
+    border-radius: 4px 2px;
+}
+
+#slogan{
+    font-family: "Bebas neue";
+    color: white;
+    text-align: center;
+    margin-top: 470px;
+    margin-left: -15px;
+}
+
+/*------------------------------End of css for HomePage-----------------------------------------------------------------------------------*/
+
+/*------------------------------FashionPage-----------------------------------------------------------------------------------------------*/
+
+#fashionLink {
+    top: 220px;
+    background-color: #2b2c2d;
+}
+
+#slideshowContainer{
+    margin-left: 130px;
+}
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+
+#palaceImg{
+    margin-left: 100px;
+}
+
+#chanelImg{
+    margin-left: 35px;
+}
+
+#gucciImg{
+    margin-left: -20px;
+}
+
+#thrashImg{
+    margin-left: -40px;
+}
+
+/*------------------------------End of css for FashionPage--------------------------------------------------------------------------------*/
+
+/*------------------------------FootwearPage----------------------------------------------------------------------------------------------*/
+
+#footwearLink{
+    top: 290px;
+    background-color: #2b2c2d;
+}
+
+#imageContainer{
+    margin-left: 130px;
+    margin-top: -40px;
+}
+
+#image1{
+    margin-top: -20px;
+}
+
+#image2{
+    margin-top: 270px;
+    margin-left: -292px;
+}
+
+#popular{
+    margin-top: -35px;
+    margin-left: 305px;
+}
+
+#image3{
+    margin-left: ;
+    margin-top: -20px;
+}
+
+#image4{
+    margin-left: -292px;
+    margin-top: 270px;
+}
+
+#wrw{
+    margin-top: -600px;
+    margin-left: 590px; 
+}
+
+.product-item {
+    padding: 15px;
+    background: transparent;
+    margin-top: 20px;
+    position: relative;
+}
+
+.product-item:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    line-height:0;
+}
+
+.pi-img-wrapper {
+    position: relative;
+}
+.pi-img-wrapper div {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.product-item:hover>.pi-img-wrapper>div {
+    display: block;
+}
+.pi-img-wrapper div .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border: 1px #fff solid;
+    margin: -13px 5px 0;
+    background: transparent;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    line-height: 1.4;
+    font-size: 12px;
+}
+.product-item .btn:hover {
+    background: #e84d1c;
+    border-color: #c8c8c8;
+}
+
+.product-item h3 {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+.product-item h3 a {
+    color: white;
+}
+
+.pi-price {
+    color: #e84d1c;
+    font-size: 18px;
+    float: left;
+    padding-top: 1px;
+}
+.product-item .add2cart {
+    float: right;
+    color: #a8aeb3;
+    border: 1px #ededed solid;
+    padding: 3px 6px;
+    text-transform: uppercase;
+}
+.product-item .add2cart:hover {
+    color: #fff;
+    background: #e84d1c;
+    border-color: #e84d1c;
+}
+
+/*------------------------------End of css for FootwearPage-------------------------------------------------------------------------------*/
+
+/*------------------------------MusicPage-------------------------------------------------------------------------------------------------*/
+
+#musicLink{
+    top: 360px;
+    background-color: #2b2c2d;
+}
+
+#hypeAlbums{
+    margin-left: -590px;
+    margin-top: -10px;
+}
+
+#musictabs{
+    margin-left: 150px;
+}
+
+*,:after,:before{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.wrapper {
+    margin:0 -5px; 
+    text-align:center;
+    width:730px;
+}
+.bubble {
+    margin:0 auto;
+    width:80px; 
+    text-align: center;
+    background-color: rgba(229,229,229,1);
+    padding:10px; display:inline-block;
+    vertical-align:top;
+    margin-right:-1px; 
+    position:relative;
+    box-sizing:content-box;
+}
+
+.bubble .details { 
+    visibility:hidden; 
+    opacity:0; 
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+    width: 80px ; 
+    margin-bottom: 10px; 
+    margin-top: -40px;
+    background: rgba(255,255,255,.2);
+    font: 10px 'Bebas neue'; 
+    text-transform: uppercase;
+    border-radius: 0 0 5px 5px;
+  -webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out; }
+.bubble:hover .details {
+    visibility:visible; 
+    opacity:1;
+    transition-delay:0s; 
+    margin-top: -10px;
+-webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out;
+}
+
+.filter-me {
+  filter: blur(1px) grayscale(100%);
+  -webkit-filter: blur(1px) grayscale(100%);
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+
+}
+.filter-me:hover {
+  filter: blur(0px) grayscale(20%);
+  -webkit-filter: blur(0px) grayscale(20%);
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.filter-me img {
+  display:inline-block;
+  border-radius:50%;
+  -webkit-border-radius: 50%;
+  width:39px;
+  border:0;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+.filter-me img:first-child {
+    margin-right: -5px;
+    transform: rotate(10deg); 
+}
+.filter-me img:last-child {
+    transform: rotate(-7deg);
+}
+.filter-me:hover img:first-child { 
+    margin-right: -5px; transform: rotate(-10deg); 
+}
+.filter-me:hover img:last-child {
+    transform: rotate(7deg); 
+}
+
+.filter-me:hover img {
+  border-radius:10px;
+  -webkit-border-radius: 10px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+}
+
+/* MAISONS - font + mep */
+.house {
+    font-family: "Bebas neue";
+    font-size:18px;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5); 
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+}
+
+/* CLASSEMENT */
+.first {height:220px;}
+.second {height:200px;}
+.third {height:180px;}
+.fourth {height:160px;}
+.fifth {height:140px;}
+.sixth {height:120px;}
+.seventh {height:100px;}
+
+/* COULEURS MAISONS -- ILH */
+.cabot {color: white;}
+.dunster {color: white;}
+.eliot {color:white;}
+.lowell {color:white;}
+.mather {color: white;}
+.quincy {color:white;}
+.winthrop {color:white;}
+
+
+/* BACKGROUND MAISONS */
+.bubble.cabot {background-color:#2b2c2d;}
+.bubble.dunster {background-color:#2b2c2d;}
+.bubble.eliot {background-color:#2b2c2d;}
+.bubble.lowell {background-color:#2b2c2d;}
+.bubble.mather {background-color:#2b2c2d;}
+.bubble.quincy {background-color:#2b2c2d;}
+.bubble.winthrop {background-color:#2b2c2d;}
+
+.arrow_bottom {
+  box-sizing: border-box;
+  border-top: 20px solid;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position:absolute;
+  bottom:-20px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+/* POINTS */
+.points { 
+    font-family: "Bebas neue";
+    font-size: 14px;
+    opacity: 0.5; 
+    color:white; 
+}
+
+/*------------------------------End of css for MusicPage----------------------------------------------------------------------------------*/
+
+/*------------------------------VideosPage------------------------------------------------------------------------------------------------*/
+
+#videosLink{
+    top: 430px;
+    background-color: #2b2c2d;
+}
+
+#video1{
+   width: 300px;
+   height: 200px;
+    margin-top: -20px;
+}
+
+#godsPlan{
+    margin-left: -19px;
+    margin-top: -10px;
+    width: 300px;
+}
+
+#video2{
+   width: 300px;
+   height: 200px;
+    margin-top: -10px;
+}
+
+#godsPlan{
+    margin-left: -19px;
+    margin-top: -10px;
+    width: 300px;
+}
+
+#video3{
+   width: 300px;
+   height: 200px;
+    
+    margin-top:10px;
+}
+
+#godsPlan{
+    margin-left: -19px;
+    margin-top: -10px;
+    width: 300px;
+}
+
+#tabContainer{
+    margin-top: -630px;
+    margin-left: 240px;
+}
+
+.faq-cat-content {
+    margin-top: 25px;
+}
+
+.faq-cat-tabs li a {
+    padding: 15px 10px 15px 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #777777;
+}
+
+.nav-tabs li a:focus,
+.panel-heading a:focus {
+    outline: none;
+}
+
+.panel-heading a,
+.panel-heading a:hover,
+.panel-heading a:focus {
+    text-decoration: none;
+    color: #777777;
+}
+
+.faq-cat-content .panel-heading:hover {
+    background-color: #efefef;
+}
+
+.active-faq {
+    border-left: 5px solid #888888;
+}
+
+.panel-faq .panel-heading .panel-title span {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#like{
+    margin-left: 400px; 
+    margin-top: -45px;
+    color: black;
+}
+
+#comment{
+    margin-top: -45px;
+    color: black;
+}
+
+/*------------------------------End of css for VideosPage---------------------------------------------------------------------------------*/
+
+/*------------------------------PrivacyPage-----------------------------------------------------------------------------------------------*/
+
+#privacyLink {
+    top: 500px;
+    background-color: #2b2c2d;
+}
+
+.well{
+    font-size: 17px;
+    background-color: black;
+    border: none;
+    width: 900px;
+    margin-left: 200px;
+}
+
+/*------------------------------End of css for PrivacyPage--------------------------------------------------------------------------------*/
+
+/*------------------------------ContactPage-----------------------------------------------------------------------------------------------*/
+
+#contactLink{
+    top: 570px;
+    background-color: #2b2c2d;
+}
+
+#sendButton{
+    font-family: "Bebas neue";
+    width: 130px;
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -40px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#sendButton:hover{
+    background-color: black;
+    color: white;
+}
+
+#socials{
+    margin-left: 280px;
+}
+
+.fa {
+  padding: 30px;
+  width: 80px;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+/*------------------------------End of css for ContactPage--------------------------------------------------------------------------------*/
